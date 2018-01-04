@@ -2,7 +2,7 @@ import sys
 
 if sys.version_info >= (3, 4):
     from html import unescape
-elif sys.version_info > (2,):
+elif sys.version_info >= (3, 0):
     from html.parser import HTMLParser
 
     unescape = HTMLParser().unescape
