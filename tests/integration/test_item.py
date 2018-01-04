@@ -1,3 +1,4 @@
+from hnpy.models import Item
 from .preparation import bm, hn
 
 
@@ -95,3 +96,10 @@ def test_lazy_loading():
     with bm.use_cassette('test_lazy_loading'):
         item.title
     assert hasattr(item, 'by')
+
+
+def test_iter_first():
+    story = hn.item(8863)
+    with bm.use_cassette('test_item_iter_first'):
+        for kid in story.kids(limit=5):
+            assert isinstance(kid, Item)
