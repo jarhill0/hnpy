@@ -1,0 +1,15 @@
+install:
+  - python setup.py install
+language: python
+matrix:
+  allow_failures:
+    - python: nightly
+  fast_finish: true
+python:
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+  - nightly
+script:
+  - python setup.py test
