@@ -1,4 +1,15 @@
-from html import unescape
+import sys
+
+if sys.version_info >= (3, 4):
+    from html import unescape
+elif sys.version_info > (2,):
+    from html.parser import HTMLParser
+
+    unescape = HTMLParser().unescape
+else:
+    import HTMLParser
+
+    unescape = HTMLParser.HTMLParser().unescape
 
 from .const import API_PATH, DEFAULT_LIMIT, ITEM_BASE_URL, USER_BASE_URL
 
