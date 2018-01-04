@@ -1,6 +1,8 @@
 # hnpy  
 *a Hacker News API wrapper written in Python*
 
+[![Build Status](https://travis-ci.org/jarhill0/hnpy.svg?branch=master)](https://travis-ci.org/jarhill0/hnpy)
+[![Coverage Status](https://coveralls.io/repos/github/jarhill0/hnpy/badge.svg?branch=master)](https://coveralls.io/github/jarhill0/hnpy?branch=master)
 
 ---
 

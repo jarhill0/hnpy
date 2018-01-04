@@ -1,4 +1,6 @@
+after_success: coveralls
 install:
+  - pip install coveralls
   - python setup.py install
 language: python
 matrix:
@@ -12,4 +14,4 @@ python:
   - 3.6
   - nightly
 script:
-  - python setup.py test
+  - coverage run --source=hnpy setup.py test
