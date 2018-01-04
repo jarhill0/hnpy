@@ -6,6 +6,7 @@ matrix:
     - python: nightly
   fast_finish: true
 python:
+  - 2.7
   - 3.3
   - 3.4
   - 3.5
