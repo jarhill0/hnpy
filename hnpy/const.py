@@ -1,4 +1,4 @@
-BASE_PATH = 'https://hacker-news.firebaseio.com/v0/'
+BASE_PATH = 'https://hacker-news.firebaseio.com/v0'
 
 # noinspection SpellCheckingInspection
 API_PATH = {
