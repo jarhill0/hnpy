@@ -1,0 +1,67 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2018-01-04T20:39:21",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://hacker-news.firebaseio.com/v0/item/16072368.json"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"by\":\"runesoerensen\",\"descendants\":166,\"id\":16072368,\"kids\":[16072642,16072677,16072681,16073318,16073164,16072551,16073835,16072604,16073650,16073484,16073086,16072506,16072519,16073468,16072890,16073158,16073033,16072801,16073520,16072702,16073497,16072993],\"score\":224,\"time\":1515088416,\"title\":\"Intel Issues Updates to Protect Systems from Security Exploits\",\"type\":\"story\",\"url\":\"https://newsroom.intel.com/news-releases/intel-issues-updates-protect-systems-security-exploits/\"}"
+        },
+        "headers": {
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "484"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Date": [
+            "Thu, 04 Jan 2018 20:39:21 GMT"
+          ],
+          "Server": [
+            "nginx"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31556926; includeSubDomains; preload"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://hacker-news.firebaseio.com/v0/item/16072368.json"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.0"
+}

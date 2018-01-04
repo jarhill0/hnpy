@@ -1,0 +1,67 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2018-01-04T20:59:01",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://hacker-news.firebaseio.com/v0/askstories.json"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "[16073801,16072147,16072185,16052538,16069491,16064146,16067756,16062465,16069124,16069119,16065928,16050294,16053578,16065194,16068588,16052625,16065823,16065610,16064232,16067301,16060497,16055756,16052413,16061335,16050205,16062230,16052539,16057783,16071142,16071110,16070941,16069763,16069715,16069656,16069473,16069147,16068996,16068967,16068924,16068684,16068607,16068351,16068165,16068019,16067950,16067797,16067677,16067467,16067293,16067212,16066998,16066358,16065875,16065793,16065725,16065304,16065017,16064755,16064627,16064493,16064096,16062936,16062749]"
+        },
+        "headers": {
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "568"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Date": [
+            "Thu, 04 Jan 2018 20:59:01 GMT"
+          ],
+          "Server": [
+            "nginx"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31556926; includeSubDomains; preload"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://hacker-news.firebaseio.com/v0/askstories.json"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.0"
+}

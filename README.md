@@ -145,10 +145,6 @@ profiles (more info [here](https://github.com/HackerNews/API#changed-items-and-p
 
 The HackerNews object also has a method `max_item()` which returns a lazy version of the newest Item. 
 
-## Todo
-
-- Add integration tests (using Betamax?)
-
 ## Credits
 
 This package came originally from my [A Bot](https://github.com/jarhill0/abot) project. It was adapted to support 

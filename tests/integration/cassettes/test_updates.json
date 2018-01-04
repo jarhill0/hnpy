@@ -1,0 +1,67 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2018-01-04T20:48:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://hacker-news.firebaseio.com/v0/updates.json"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"items\":[16073605,15931095,16073928,16069164,16073735,16073933,16069780,16073667,16073222,16073156,16073225,16073515,16073750,16072494,16073187,16073234,16072998,16073555,16073932,16073931,16073559,16072308,16073317,16073219,16052538,15921045,16073874,16060855,16073929,16073039,16071488,16073745,16070050,16069200,16072368,16073930,16073254,16071612,16073191,16067109,16070328,16068305,16072912,16071290,16061837],\"profiles\":[\"dpingaro\",\"kruhft\",\"nbhartiya\",\"Keyframe\",\"jdoliner\",\"dbatten\",\"tasty_freeze\",\"ebikelaw\",\"jandrese\",\"sitkack\",\"erikj\",\"dingo_bat\",\"coliveira\",\"el_duderino\",\"blang\",\"kilon\",\"chris_wot\",\"CurtMonash\",\"burnte\",\"pchristensen\",\"dustinkirkland\"]}"
+        },
+        "headers": {
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "668"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Date": [
+            "Thu, 04 Jan 2018 20:48:39 GMT"
+          ],
+          "Server": [
+            "nginx"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31556926; includeSubDomains; preload"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://hacker-news.firebaseio.com/v0/updates.json"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.0"
+}
