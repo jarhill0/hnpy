@@ -2,4 +2,4 @@
 
 from .api import HackerNews
 
-__version__ = '0.0.1a0'
+__version__ = 'v0.1.0'
