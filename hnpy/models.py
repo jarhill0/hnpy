@@ -25,8 +25,8 @@ class Item:
 
     def __eq__(self, other):
         if isinstance(other, (int, str)):
-            return other == id or str(id) == other
-        return hasattr(other, 'id') and other.id == self.id
+            return other == self.id or str(self.id) == str(other)
+        return hasattr(other, 'id') and self == other.id  # light recursion...
 
     def __init__(self, id_, hn, data=None):
         self._hn = hn
@@ -94,7 +94,7 @@ class User:
     def __eq__(self, other):
         if isinstance(other, (int, str)):
             return other == self.name
-        return hasattr(other, 'name') and other.id == self.name
+        return hasattr(other, 'name') and other.name == self.name
 
     def __getattr__(self, item):
         if not self._loaded:
@@ -112,7 +112,7 @@ class User:
             self._populate(data)
 
     def __repr__(self):
-        return '{}({})'.format(self.__class__.__name__, self.name)
+        return '{}({!r})'.format(self.__class__.__name__, self.name)
 
     def _load(self):
         data = self._hn.get(API_PATH['user'].format(user=self.name))
