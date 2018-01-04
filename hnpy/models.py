@@ -6,10 +6,6 @@ elif sys.version_info >= (3, 0):
     from html.parser import HTMLParser
 
     unescape = HTMLParser().unescape
-else:
-    import HTMLParser
-
-    unescape = HTMLParser.HTMLParser().unescape
 
 from .const import API_PATH, DEFAULT_LIMIT, ITEM_BASE_URL, USER_BASE_URL
 
