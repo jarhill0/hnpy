@@ -147,7 +147,7 @@ The HackerNews object also has a method `max_item()` which returns a lazy versio
 
 ## Todo
 
-- Add tests (using Betamax?)
+- Add integration tests (using Betamax?)
 
 ## Credits
 
