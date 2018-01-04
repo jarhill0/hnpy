@@ -1,6 +1,6 @@
 from setuptools import setup
 
-VERSION = '0.0.1a0'
+from hnpy import __version__
 
 setup(name='hnpy',
       author='jarhill0',
@@ -17,4 +17,4 @@ setup(name='hnpy',
                      'betamax_serializers >= 0.2.0'],
       test_suite='tests',
       url='https://github.com/jarhill0/hnpy',
-      version=VERSION)
+      version=__version__)
