@@ -1,5 +1,4 @@
 *.egg-info/*
 .cache/*
-.pypirc
 .idea/*
 dist/*
