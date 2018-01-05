@@ -13,8 +13,13 @@ benefits that come with using Python objects.
 
 ## Installation
 
-Once the package is more polished and has some tests written, it will be published to PyPI. For now, the only way to 
-install is to download the source and place the main package in your PATH.
+Use one of the following, depending on how your system is configured:
+
+```commandline
+pip install hnpy
+pip3 install hnpy
+python3 -m pip install hnpy
+```
 
 ## Usage
 
