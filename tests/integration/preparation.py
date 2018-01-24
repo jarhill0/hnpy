@@ -1,3 +1,5 @@
+import os
+
 from betamax import Betamax
 from betamax_serializers.pretty_json import PrettyJSONSerializer
 from requests import Session
@@ -5,7 +7,7 @@ from requests import Session
 from hnpy import HackerNews
 
 with Betamax.configure() as config:
-    config.cassette_library_dir = 'tests/integration/cassettes'
+    config.cassette_library_dir = os.path.join('tests', 'integration', 'cassettes')
 
 Betamax.register_serializer(PrettyJSONSerializer)
 
