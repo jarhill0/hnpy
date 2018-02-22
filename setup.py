@@ -1,7 +1,18 @@
+import subprocess
+
 from setuptools import setup
 
 from hnpy import __version__
-from md_to_rst import md_to_rst
+
+
+def md_to_rst(filename):
+    try:
+        out = subprocess.check_output('pandoc -t rst -i {}'.format(filename), shell=True)
+    except subprocess.CalledProcessError:
+        # pandoc is probably not installed
+        return 'README: https://github.com/jarhill0/hnpy#hnpy'
+    return out.decode('utf-8')  # bytes to str
+
 
 setup(name='hnpy',
       author='jarhill0',
