@@ -15,7 +15,7 @@ benefits that come with using Python objects.
 
 Use one of the following, depending on how your system is configured:
 
-```commandline
+```shell
 pip install hnpy
 pip3 install hnpy
 python3 -m pip install hnpy
