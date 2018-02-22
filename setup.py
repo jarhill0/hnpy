@@ -1,6 +1,7 @@
 from setuptools import setup
 
 from hnpy import __version__
+from md_to_rst import md_to_rst
 
 setup(name='hnpy',
       author='jarhill0',
@@ -9,8 +10,7 @@ setup(name='hnpy',
       install_requires=['requests >= 2.18.4'],
       keywords='hacker news api wrapper python3',
       license='MIT',
-      long_description='This package is for Python 3 only.\n\nClick here for README: '
-                       'https://github.com/jarhill0/hnpy#hnpy',
+      long_description=md_to_rst('README.md'),
       packages=['hnpy'],
       setup_requires=['pytest-runner'],
       tests_require=['pytest',
