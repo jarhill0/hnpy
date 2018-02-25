@@ -1,5 +1,3 @@
-from html import unescape
-
 from .const import API_PATH, DEFAULT_LIMIT, ITEM_BASE_URL, USER_BASE_URL
 
 
@@ -124,9 +122,6 @@ class User:
             if key in User.ITEM_ATTRS:
                 self._private[key] = value
                 continue
-
-            if isinstance(value, str):
-                value = unescape(value)
             self.__setattr__(key, value)
         self._loaded = True
 

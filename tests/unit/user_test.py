@@ -64,7 +64,7 @@ def test_assigning_vals():
 
     # test html unescape
     user = User('john', None, {'about': 'E&gt;'})
-    assert user.about == 'E>'
+    assert user.about == 'E&gt;'
 
 
 def test_obj_iterator():
