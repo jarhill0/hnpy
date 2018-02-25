@@ -69,9 +69,6 @@ class Item:
                 value = self._hn.user(value)
             if key in ('parent', 'poll'):
                 value = self._hn.item(value)
-
-            if isinstance(value, str):
-                value = unescape(value)
             self.__setattr__(key, value)
         self._loaded = True
 

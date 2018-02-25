@@ -87,9 +87,9 @@ def test_iterators():
     assert len_iteration(item.parts(3)) == 3
 
 
-def test_unescape():
+def test_escape():
     item = Item(123, None, {'text': '&lt;3'})
-    assert item.text == '<3'
+    assert item.text == '&lt;3'
 
 
 def test_content():
