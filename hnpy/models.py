@@ -50,7 +50,8 @@ class Item:
 
     def _iter_helper(self, name, limit):
         self._ensure_loaded()
-        return self._hn.iterate_list(self._private[name], limit)
+        raw_item = self._private.get(name, [])
+        return self._hn.iterate_list(raw_item, limit)
 
     def _load(self):
         data = self._hn.get(API_PATH['item'].format(id=self.id))
