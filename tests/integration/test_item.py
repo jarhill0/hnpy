@@ -103,3 +103,10 @@ def test_iter_first():
     with bm.use_cassette('test_item_iter_first'):
         for kid in story.kids(limit=5):
             assert isinstance(kid, Item)
+
+
+def test_iterate_no_kids():
+    story = hn.item(16660719)
+    with bm.use_cassette('test_item_iterate_no_kids'):
+        for kid in story.kids():
+            assert False, 'should have no kids'
